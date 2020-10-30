@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-almeida-ts",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/almeidx/eslint-config-almeida-ts"
+  },
+  "author": "almeidx <almeidx@pm.me> (https://almeidx.me) ",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-import": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "homepage": "https://github.com/almeidx/eslint-config-almeida-ts",
+  "license": "MIT"
+}

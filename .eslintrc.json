@@ -1,0 +1,245 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "import",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "rules": {
+    "@typescript-eslint/semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": "off",
+    "@typescript-eslint/quotes": [
+      "error",
+      "single"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "guard-for-in": "off",
+    "import/extensions": [
+      "error",
+      "never"
+    ],
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "index",
+          "internal",
+          "parent",
+          "sibling"
+        ]
+      }
+    ],
+    "max-len": [
+      "error",
+      120
+    ],
+    "no-await-in-loop": "off",
+    "no-bitwise": "off",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 1
+      }
+    ],
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ],
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "no-useless-contructor": "off",
+    "no-void": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 6,
+          "multiline": true
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 6,
+          "multiline": true
+        },
+        "ObjectExpression": {
+          "consistent": true,
+          "minProperties": 6,
+          "multiline": true
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "minProperties": 6,
+          "multiline": true
+        }
+      }
+    ],
+    "semi": "off",
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "minKeys": 2,
+        "natural": false
+      }
+    ],
+    "sort-vars": [
+      "error"
+    ],
+    "@typescript-eslint/await-thenable": [
+      "error"
+    ],
+    "@typescript-eslint/adjacent-overload-signatures": [
+      "error"
+    ],
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": [
+      "error"
+    ],
+    "camelcase": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase"
+        ]
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "@typescript-eslint/comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": [
+      "error",
+      {
+        "allowKeywords": true
+      }
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": 1
+        },
+        "ArrayExpression": 1,
+        "ObjectExpression": 1,
+        "ImportDeclaration": 1,
+        "flatTernaryExpressions": false,
+        "ignoreComments": false
+      }
+    ],
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true,
+        "overrides": {
+          "return": {
+            "after": true
+          },
+          "throw": {
+            "after": true
+          },
+          "case": {
+            "after": true
+          }
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      },
+      "typescript": {}
+    }
+  }
+}
