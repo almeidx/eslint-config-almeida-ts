@@ -147,19 +147,22 @@
           "camelCase",
           "PascalCase",
           "UPPER_CASE"
-        ]
+        ],
+        "leadingUnderscore": "allow"
       },
       {
         "selector": "function",
         "format": [
           "camelCase"
-        ]
+        ],
+        "leadingUnderscore": "allow"
       },
       {
         "selector": "typeLike",
         "format": [
           "PascalCase"
-        ]
+        ],
+        "leadingUnderscore": "allow"
       }
     ],
     "comma-spacing": [
