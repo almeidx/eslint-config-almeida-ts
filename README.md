@@ -16,6 +16,9 @@ npm i eslint eslint-config-almeida-ts --save-dev
 Create a `.eslintrc.json` file on the root directory your project with: 
 ```json
 {
-  "extends": "almeida-ts"
+  "extends": "almeida-ts",
+  "parserOptions": {
+    "project": "./path/to/tsconfig.json"
+  }
 }
 ```
