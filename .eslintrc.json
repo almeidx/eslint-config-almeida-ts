@@ -210,8 +210,8 @@
       }
     ],
     "arrow-body-style": [
-      "error"
-      "as-needed",
+      "error",
+      "as-needed"
     ],
     "brace-style": "off",
     "camelcase": "off",
@@ -220,8 +220,8 @@
     "consistent-return": "off",
     "dot-notation": "off",
     "eol-last": [
-      "error"
-      "always",
+      "error",
+      "always"
     ],
     "func-call-spacing": "off",
     "guard-for-in": "off",
