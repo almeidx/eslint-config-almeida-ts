@@ -210,8 +210,8 @@
       }
     ],
     "arrow-body-style": [
-      "as-needed",
       "error"
+      "as-needed",
     ],
     "brace-style": "off",
     "camelcase": "off",
@@ -220,8 +220,8 @@
     "consistent-return": "off",
     "dot-notation": "off",
     "eol-last": [
-      "always",
       "error"
+      "always",
     ],
     "func-call-spacing": "off",
     "guard-for-in": "off",
@@ -314,8 +314,8 @@
     "quotes": "off",
     "semi": "off",
     "sort-keys": [
-      "asc",
       "error",
+      "asc",
       {
         "caseSensitive": true,
         "minKeys": 2,
