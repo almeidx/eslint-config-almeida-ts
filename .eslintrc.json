@@ -195,8 +195,8 @@
       "single"
     ],
     "@typescript-eslint/semi": [
-      "always",
       "error",
+      "always",
       {
         "omitLastInOneLineBlock": true
       }
