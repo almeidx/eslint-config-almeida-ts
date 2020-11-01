@@ -89,8 +89,8 @@
       }
     ],
     "@typescript-eslint/lines-between-class-members": [
-      "always",
       "error",
+      "always",
       {
         "exceptAfterSingleLine": false
       }
