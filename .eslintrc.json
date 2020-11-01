@@ -138,8 +138,8 @@
       }
     ],
     "@typescript-eslint/no-extra-parens": [
-      "all",
       "off",
+      "all",
       {
         "conditionalAssign": true,
         "enforceForArrowConditionals": false,
