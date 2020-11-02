@@ -13,7 +13,7 @@ npm i eslint eslint-config-almeida-ts --save-dev
 ```
 
 ## Configuration
-Create a `.eslintrc.json` file on the root directory your project with: 
+Create a `.eslintrc.json` file on the root directory your project with:
 ```json
 {
   "extends": "almeida-ts",

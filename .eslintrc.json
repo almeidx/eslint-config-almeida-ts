@@ -12,6 +12,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 12,
+    "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "plugins": [
@@ -24,6 +25,16 @@
     ],
     "@typescript-eslint/await-thenable": [
       "error"
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "minimumDescriptionLength": 5,
+        "ts-check": false,
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": true,
+        "ts-nocheck": true
+      }
     ],
     "@typescript-eslint/brace-style": [
       "error"
@@ -48,12 +59,18 @@
         "before": false
       }
     ],
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/dot-notation": [
       "error",
       {
         "allowKeywords": true
       }
     ],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/func-call-spacing": [
       "error",
       "never"
@@ -150,6 +167,7 @@
         ]
       }
     ],
+    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extra-parens": [
       "off",
       "all",
@@ -209,6 +227,10 @@
         "variables": true
       }
     ],
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/prefer-as-const": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/quotes": [
       "error",
       "single"
@@ -228,6 +250,7 @@
         "named": "never"
       }
     ],
+    "@typescript-eslint/unbound-method": "off",
     "arrow-body-style": [
       "error",
       "as-needed"
@@ -270,6 +293,8 @@
     ],
     "import/first": "error",
     "import/imports-first": "off",
+    "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
     "import/no-cycle": "off",
     "import/no-duplicates": "error",
     "import/no-extraneous-dependencies": "off",
