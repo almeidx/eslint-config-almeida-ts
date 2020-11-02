@@ -179,6 +179,12 @@
     "@typescript-eslint/no-shadow": [
       "error"
     ],
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      {
+        "allowConstantLoopConditions": true
+      }
+    ],
     "@typescript-eslint/no-unused-expressions": [
       "error",
       {
